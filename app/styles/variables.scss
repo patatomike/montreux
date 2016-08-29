@@ -1,0 +1,89 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+@font-face {
+  font-family: 'Vegur Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Vegur Regular'), url($icon-font-path+'Vegur-R 0.602.woff') format('woff');
+};
+
+@font-face {
+font-family: 'Vegur Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Vegur Bold'), url($icon-font-path+'Vegur-B 0.602.woff') format('woff');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700italic,900,400italic);
+
+
+// Fonts Variables
+$main-font: 'Playfair Display', serif;
+$secondary-font:'Work Sans', sans-serif;
+$third-font: 'Lato';
+
+$title-font: $main-font;
+$text-font: $secondary-font;
+
+
+// Color Variables
+
+$dark-color: #000;
+$light-color:#fff;
+
+$brand-color-1:#EA2C84;
+$brand-color-2:#DC9030;
+$brand-color-3:#9B77A7;
+$brand-color-4:#98ba68;
+
+$dark-color-lighten: lighten($dark-color, 10%);
+$brand-color-1-light: lighten($brand-color-1, 10%);
+$brand-color-2-light: lighten($brand-color-2, 10%);
+$brand-color-3-light: lighten($brand-color-3, 10%);
+$brand-color-4-light: lighten($brand-color-4, 10%);
+
+$light-color-darken: darken($light-color, 10%);
+$brand-color-1-dark: darken($brand-color-1, 10%);
+$brand-color-2-dark: darken($brand-color-2, 10%);
+$brand-color-3-dark: darken($brand-color-3, 10%);
+$brand-color-4-dark: darken($brand-color-4, 10%);
+
+
+@mixin btn-color-guide($color1, $color2) {
+  background-color:lighten($color1, 10%);
+  border-color:lighten($color1, 10%);
+  color:$color2;
+  &:hover{
+    background-color:darken($color1, 10%);
+    border-color:darken($color1, 10%);
+  }
+}
+
+@mixin revert-btn-color-guide($color1, $color2) {
+  background-color:$color2;
+  border-color:lighten($color1, 10%);
+  color:lighten($color1, 10%);
+  &:hover{
+    background-color:darken($color1, 10%);
+    border-color:darken($color1, 10%);
+    color:$light-color;
+  }
+}
+
+@mixin section-color($section-color){
+  h1, h2, h3, h4, h5, h6, a, i{
+    color:lighten($section-color, 10%);
+  }
+  .btn {
+    @include btn-color-guide($section-color, $light-color);
+  }
+  .btn-revert{
+    @include revert-btn-color-guide($section-color, $light-color);
+  }
+}

@@ -1,0 +1,616 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hypnomontreux</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <script src="https://use.fontawesome.com/6f348184fc.js"></script>
+    <!-- <script src="https://use.fontawesome.com/6f348184fc.js"></script> -->
+
+
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+    <nav class="navbar navbar-default header">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#accueil"><img class="brand-img" alt="Brand" src="images/logo-hypnomontreux.png"> Hypnomontreux</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="nav-section" href="#hypnose">Hypnose</a></li>
+            <li><a class="nav-section" href="#eft">EFT</a></li>
+            <li><a class="nav-section" href="#massages">Massages</a></li>
+            <li><a class="nav-section" href="/hypnomontreux/blog.html">Blog</a></li>
+            <li id="cta-menu"><a class="btn btn-lg" href="#contact">Nous contacter</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+<!-- Section Centre-->
+
+
+      <div class="full-screen-landing">
+        <div class="full-screen-landing-cover">
+              <div class="container">
+      <div class="jumbotron">
+        <h1>Nous vous accompagnons pour améliorer votre qualité de vie</h1>
+        <p class="lead">Hypnomontreux, votre spécialiste hypnose, EFT et Massage à Clarens Montreux. </p>
+        <p><a class="btn btn-lg btn-success" href="#contact">Nous contacter</a></p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+    <div id="accueil" class="container section">
+      <div class="row marketing">
+        <div class="col-lg-8">
+          <div class="service">
+            <div class="service-description">
+              <h2>Votre centre d'hypnothérapie à Clarens Montreux</h2>
+              <!--<p class="sub-title">Votre centre d'hypnothérapie à Clarens Montreux<p>-->
+              <p>Situé au centre de Clarens Montreux, le centre d'hypnothérapie et de soins naturels vous accueille dans un espace harmonieux et cosy. Hypnomontreux, un lieu à part, atypique, un espace "autrement".
+              Un cocon pour se retrouver, se ressourcer, se reconstruire.
+              Une invitation propice au voyage intérieur.
+              Un moment pour prendre du recul, de la hauteur de vue, de l'inspiration.</p>
+            </div>
+            <div class="testimonial-panel">
+              <div class="testimonial-author-subpanel">
+                <img class="portrait" alt="Brand" src="images/Portrait-Fatima.png">
+                <p><strong>Fátima Vala</strong>, </br>hypnothérapeute et praticienne en soins naturels</p>
+              </div>
+              <div class="testimonial-author-subpanel">
+                <img class="portrait" alt="Brand" src="images/Portrait-Laurent.png">
+                <p><strong>Laurent Montbuleau</strong>, </br>hypnothérapeute</p>
+              </div>
+
+            </div>
+          </div>
+          </div>
+        <div class="col-lg-4 side-panel">
+          <div class="info-contact-panel">
+            <div class="info-contact-title">
+              <h4>Accès et contact</h4>
+            </div>
+            <div id="map1" class="map"></div>
+            <script>
+              var map1;
+              var map2;
+              function initMap() {
+                var image = 'images/logo-hypnomontreux.png';
+                var myLatLng = {lat: 46.4413789, lng: 6.8908696};
+
+                map1 = new google.maps.Map(document.getElementById('map1'), {
+                  center: myLatLng,
+                  zoom: 15,
+                  mapTypeControlOptions: {
+                     mapTypeIds: []
+                  },
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                var marker1 = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map1,
+                  Title: 'Centre Hypnomontreux'
+                });
+
+                var image = 'images/logo-hypnomontreux.png';
+                var myLatLng = {lat: 46.4413789, lng: 6.8908696};
+
+                map2 = new google.maps.Map(document.getElementById('map2'), {
+                  center: myLatLng,
+                  zoom: 15,
+                  mapTypeControlOptions: {
+                     mapTypeIds: []
+                  },
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                });
+
+                var marker2 = new google.maps.Marker({
+                  position: myLatLng,
+                  map: map2,
+                  Title: 'Centre Hypnomontreux'
+                });
+              }
+        </script>
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFJabmmSHj3XBsuv4eC5IITTfot6tnRHk&callback=initMap"
+          async defer></script>
+          <div class="info-contact-article">
+            <p class="adresse">
+              <i class="fa fa-map-marker"></i>
+              Centre d'hypnothérapie et de soins naturels</br>
+              Av. Alexandre Vinet 17</br>
+              1815 Clarens</br>
+              Esplanade centre commercial Migros (parking)</p>
+            <p class="phone-number"><i class="fa fa-phone" aria-hidden="true"></i> 079 575 57 88</p>
+            <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i>contact@hypnomontreux.ch</p>
+            <div class="info-contact-cta-ctn">
+              <a class="btn btn-lg btn-revert" href="https://www.google.ca/maps/place/Hypnomontreux/@46.4413826,6.8908696,17z/data=!3m1!4b1!4m5!3m4!1s0x478e9b6a4c94f7c9:0x1651c134e1d546c9!8m2!3d46.4413789!4d6.8930583?hl=en" target="_blank">Accès</a>
+              <a class="btn btn-lg" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="col-lg-10 col-lg-offset-1">
+          <blockquote>
+            Depuis les séances je n’ai plus d’angoisses, d’anxiété et ma boule au ventre a complètement disparue. Je me sens à nouveau autonome et légère comme si un grand poids c’était envolé. J’ai retrouvé la confiance en moi et peux enfin me lancer dans mes projets.
+            <small class="author">Lisa</small>
+          </blockquote>
+        </div>
+        </div>
+        <hr>
+    </div>
+
+<!-- End Section Centre-->
+
+<!-- Section Hypnose-->
+
+    <div id="hypnose" class="container section">
+      <div class="row service hideme">
+        <div class="col-lg-6 service-description">
+          <h2>L'HYPNOSE</h2>
+          <p class="sub-title">Une solution douce, rapide et efficace pour résoudre de nombreux problèmes</p>
+          <p>Vous souhaitez arrêter de fumer, vous débarrasser d’une phobie ou encore maigrir et stabiliser votre poids ? L’hypnothérapie peut vous aider. Elle est une solution douce, rapide et efficace pour résoudre de nombreux problèmes. Et vous aide à augmenter vos ressources personnelles pour atteindre vos objectifs.</p>
+          <p>L’hypnose est un état naturel de conscience élargie, différent de l’état de veille habituelle et du sommeil. C’est aussi un ensemble de techniques, sous forme de relaxation plus ou moins profonde, pour permettre aux suggestions et visualisations positives d’atteindre l’inconscient et ainsi de le libérer de blocages et d'émotions anciennes.</p>
+        </div>
+          <div class="col-lg-6">
+            <div class="package-card">
+              <img src="images/img-product-1.jpg" alt="service-1" class="img-product">
+              <h3>Envie de guérir et de vous épanouir grâce à l'hypnose?</h3>
+              <!--<p>L’hypnose est un état naturel de conscience élargie, différent de l’état de veille habituelle et du sommeil. C’est aussi un ensemble de techniques, sous forme de relaxation plus ou moins profonde, pour permettre aux suggestions et visualisations positives d’atteindre l’inconscient et ainsi de le libérer de blocages et d'émotions anciennes.</p>-->
+              <div class="package-footer">
+                <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                <a class="btn btn-lg hypnose" href="#contact">Je prends RDV</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row sub-service">
+          <div class="col-lg-offset-1 col-lg-5">
+            <div class="package-card">
+              <img src="images/img-product-2.jpg" alt="service-2" class="img-product">
+              <h3>Vous souhaitez vous libérer du tabac sans peine et définitivement?</h3>
+              <div class="package-footer">
+              <p class="package-price">Tarif de la séance : 130 CHF<br></p>
+              <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+            </div>
+            </div>
+          </div>
+          <div class=" col-lg-5 sub-service-desc">
+            <h3>Je deviens non fumeur et je le reste</h3>
+            <p>Alors l’hypnose est pour vous, car elle est remarquablement efficace et rapide pour arrêter de fumer. Et sans rechute. L'hypnose calme les symptômes de manque sévère aux composants du tabac et aux gestes et comportements addictifs. Elle agit en profondeur sur la dépendance psycho-comportementale.</p>
+            <p>Notre méthode comprend également une technique complémentaire en acupression pour la dépendance nicotinique et l’EFT pour les émotions perturbantes.</p>
+            <p>Durant la séance adaptée à vos besoins, une déprogrammation des automatismes et réflexes ancrés sera établie pour instaurer une reprogrammation de l’inconscient en mode « non fumeur ». Car vous deviendrez NON FUMEUR et pas un ancien fumeur, même si vous fumez depuis longtemps. Il n’y aura donc pas de compensations.</p>
+            <p><i>1ère séance - avec anamnèse - durée environ 2h<br>Dès la 2e séance, durée 1h environ<br>Forfait pour 3 séances : CHF 350.- au lieu de CHF 390.-</i></p>
+          </div>
+        </div>
+        <div class="row sub-service ">
+          <div class="col-lg-offset-1 col-lg-5 sub-service-desc">
+            <h3>Je maigris et stabilise mon poids</h3>
+            <p>Vous rêvez d’atteindre votre poids idéal ? En finir avec les problèmes de surpoids ? Grâce à l’hypnose thérapeutique combinée à l’EFT, vous pouvez MAÎTRISER VOTRE POIDS. Avec un résultat durable. Pour enfin sortir du cycle infernal des régimes et de l’effet yo-yo. Stopper les comportements compulsifs : grignotage, envies de sucre ou de gras, etc. En utilisant vos fantastiques ressources intérieures, vous pouvez changer vos croyances limitantes en comportement équilibré et sain pour votre santé.</p>
+            <p>Les kilos, c’est avant tout dans la tête.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="package-card">
+              <img src="images/img-product-3.jpg" alt="service-3" class="img-product">
+              <h3>Je trouve mon poids idéal et je le stabilise</h3>
+              <div class="package-footer">
+              <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+              <a class="btn btn-lg hypnose-maigrir" href="#contact">Je prends RDV</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <!--
+        <div class="row sub-service">
+          <div class="col-lg-offset-1 col-lg-5">
+            <div class="package-card">
+              <img src="images/img-product-2.jpg" alt="service-2" class="img-product">
+              <h3>Vous souhaitez vous libèrer du tabac sans peine et définitivement?</h3>
+              <p>L'hypnose est une technique remarquablement efficace et rapide pour vous aider à arrêter de fumer. Et sans rechute. Car vous deviendrez NON FUMEUR, que vous soyez faiblement ou très fortement dépendants à la nicotine, et pas un ancien fumeur. Il n’y aura donc pas de compensations.</p>
+              <div class="package-footer">
+              <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+              <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+            </div>
+            </div>
+          </div>
+          <div class=" col-lg-5">
+            <h3>Je deviens non fumeur et je le reste</h3>
+            <p>L'hypnose est une technique remarquablement efficace et rapide pour vous aider à arrêter de fumer. Et sans rechute. Car vous deviendrez NON FUMEUR, que vous soyez faiblement ou très fortement dépendants à la nicotine, et pas un ancien fumeur. Il n’y aura donc pas de compensations. L'hypnose calme les symptômes de manque sévère aux composants du tabac et aux gestes et comportements addictifs. Notre méthode comprend une technique complémentaire en acupression pour la dépendance nicotinique et l’EFT pour les émotions perturbantes.</p>
+          </div>
+        </div>
+        <div class="row sub-service">
+          <div class="col-lg-offset-1 col-lg-5">
+            <h3>Je maigris et stabilise mon poids</h3>
+            <p>Vous rêvez d’atteindre votre poids idéal ? En finir avec les problèmes de surpoids ? Grâce à l’hypnose thérapeutique combinée à l’EFT, vous pouvez MAÎTRISER VOTRE POIDS. Avec un résultat durable. Pour enfin sortir du cycle infernal des régimes et de l’effet yo-yo. Stopper les comportements compulsifs : grignotage, envies de sucre ou de gras, etc. En utilisant vos fantastiques ressources intérieures, vous pouvez changer vos croyances limitantes en comportement équilibré et sain pour votre santé.</p>
+            <p>Les kilos, c’est avant tout dans la tête.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="package-card">
+              <img src="images/img-product-3.jpg" alt="service-3" class="img-product">
+              <h3>Je trouve mon poids idéal et je le stabilise</h3>
+              <p>L'hypnose est une technique remarquablement efficace et rapide pour vous aider à arrêter de fumer. Et sans rechute. Car vous deviendrez NON FUMEUR, que vous soyez faiblement ou très fortement dépendants à la nicotine, et pas un ancien fumeur. Il n’y aura donc pas de compensations.</p>
+              <div class="package-footer">
+              <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+              <a class="btn btn-lg hypnose-maigrir" href="#contact">Je prends RDV</a>
+            </div>
+            </div>
+          </div>
+        </div>-->
+    </div>
+
+    <!-- Section Hypnose End-->
+
+    <!-- Section EFT-->
+
+        <div id="eft" class="container-fluid section section-grey">
+          <div class="container">
+          <div class="row service hideme">
+            <div class="col-lg-6 service-description">
+              <h2>L'EFT</h2>
+              <p class="sub-title">Thérapie énergétique pour se libérer des émotions qui vous perturbent</p>
+              <p>Basée sur le principe de l’acupuncture, cette méthode permet de dissoudre les émotions négatives en réalignant en douceur les énergies à l’aide de tapotements. En reconnectant l’esprit et le corps, l’EFT aide à gérer le stress et à se relaxer. Ses résultats sont durables et optimisent l’état physiologique de l’organisme. Pour reprendre votre propre contrôle afin de réaliser vos objectifs.</p>
+              <p>L’EFT est reconnue pour ses résultats rapides et durables, tant dans le domaine émotionnel que physique : traumatismes, phobies, croyances limitantes, chagrin, colère, culpabilité, anxiété, amincissement, problèmes d’addictions et de compulsions, douleurs, maux de tête, allergies...</p>
+            </div>
+              <div class="col-lg-6">
+                <div class="package-card">
+                  <img src="images/img-product-3.jpg" alt="service-3" class="img-product">
+                  <h3>Envie de vous libérer d’émotions perturbantes?</h3>
+                <!--  <p>L’EFT est une thérapie énergétique pour se libérer des émotions qui vous perturbe. Basée sur le principe de l’acupuncture, cette méthode réaligne en douceur les énergies à l’aide de tapotements.</p>-->
+                  <div class="package-footer">
+                  <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                  <a class="btn btn-lg hypnose-maigrir" href="#contact">Je prends RDV</a>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Massage-->
+
+            <div id="massages" class="container section">
+              <div class="row service">
+                <div class="col-lg-offset-2 col-lg-8 service-description massage-desc">
+                  <h2 class="text-center">LES MASSAGES</h2>
+                  <p class="sub-title">Refléxologie, drainage lymphatique, massages aux pierres chaudes et lomi lomi</p>
+                </div>
+              </div>
+              <div class="row sub-service">
+                <div class="col-lg-offset-1 col-lg-5">
+                  <div class="package-card">
+                    <img src="images/img-product-5.jpg" alt="service-5" class="img-product">
+                    <h3>J’active mon autoguérison grâce à la réflexologie</h3>
+                    <div class="package-footer">
+                    <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                    <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 sub-service-desc">
+                <h3>L'autoguérison grâce à la réflexologie</h3>
+                <p>La réflexologie est une thérapie manuelle qui vise à activer les processus d’autoguérison du corps. La réflexologie se pratique en exerçant une pression soutenue, avec le bout des doigts, sur des zones ou des réflexes sur les pieds et les mains. Elle est très efficace en action préventive ou thérapeutique.</p>
+                <p>Fatigue, problèmes digestifs, troubles du sommeil, faiblesse circulatoire ou états inflammatoires.</p>
+              </div>
+              </div>
+              <div class="row sub-service">
+                <div class="col-lg-offset-1 col-lg-5 sub-service-desc">
+                  <h3>Les bienfaits du drainage lymphatique</h3>
+                  <p>Technique de massage doux destiné à stimuler la circulation de la lymphe et à détoxiquer l’organisme, tout en renforçant le système immunitaire. Lorsque la circulation de la lymphe est déficiente, le corps peut s'affaiblir et s'intoxiquer, ce qui risque d’entraîner divers problèmes de santé : enflure des membres, vieillissement prématuré, cellulite, jambes lourdes, vergetures, etc.</p>
+                  <p>Jambes lourdes, cellulite, rides, obésité, couperose, cicatrisation, système digestif, œdèmes, etc.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="package-card">
+                      <img src="images/img-product-6.jpg" alt="service-5" class="img-product">
+                      <h3>Je profite des bienfaits du drainage lymphatique</h3>
+                      <div class="package-footer">
+                      <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                      <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-service">
+                <div class="col-lg-offset-1 col-lg-5">
+                  <div class="package-card">
+                    <img src="images/img-product-7.jpg" alt="service-5" class="img-product">
+                    <h3>Je me relaxe et rééquilibre mes énergies</h3>
+                    <div class="package-footer">
+                    <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                    <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-5 sub-service-desc">
+                  <h3>Relaxation et rééquilibre des énergies</h3>
+                  <p>Pour ce massage, on utilise une dizaine de pierres volcaniques d’Hawaii, chauffées. Par des mouvements lents, des effleurages doux et appuyés, on masse avec les pierres lisses et une huile végétale. Ensuite, on pose les pierres à des endroits précis de corps, le long des méridiens, les centres énergétiques. Elles diffusent une douce chaleur et procurent une profonde sensation de bien-être et de relâchement.</p>
+                  <p>Système circulatoire et lymphatique, stress, fatigue, douleurs, spasmes, tensions musculaires, élimination des toxines, sommeil.</p>
+                </div>
+                </div>
+                <div class="row sub-service">
+                  <div class="col-lg-offset-1 col-lg-5 sub-service-desc">
+                  <h3>Un magnifique massage hawaïen</h3>
+                  <p>Magnifique massage complet du corps et du visage inspiré de la tradition chamanique hawaïenne. Il ressemble à une danse, gracieux et constamment en mouvement, et relie toutes les dimensions de l’être à la source de vie. Avant le massage, on exprime un vœu et le voyage commence…</p>
+                  <p>Travail en profondeur, dispersion de blocages et tensions, harmonisation et libération émotionnelle. Nombreux problèmes de santé.</p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="package-card">
+                    <img src="images/img-product-8.jpg" alt="service-5" class="img-product">
+                    <h3>Je savoure un magnifique massage hawaïen</h3>
+                    <div class="package-footer">
+                    <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                    <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <!--
+              <div class="row sub-service">
+                <div class="col-lg-offset-1 col-lg-5">
+                  <div class="package-card">
+                    <img src="images/img-product-5.jpg" alt="service-5" class="img-product">
+                    <h3>J’active mon autoguérison grâce à la réflexologie</h3>
+                    <p>L'hypnose est une technique remarquablement efficace et rapide pour vous aider à arrêter de fumer. Et sans rechute. Car vous deviendrez NON FUMEUR, que vous soyez faiblement ou très fortement dépendants à la nicotine, et pas un ancien fumeur. Il n’y aura donc pas de compensations.</p>
+                    <div class="package-footer">
+                    <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                    <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5">
+                <h3>L'autoguérison grâce à la réflexologie</h3>
+                <p>La réflexologie est une thérapie manuelle qui vise à activer les processus d’autoguérison du corps. La réflexologie se pratique en exerçant une pression soutenue, avec le bout des doigts, sur des zones ou des réflexes sur les pieds et les mains. Elle est très efficace en action préventive ou thérapeutique.</p>
+                <p>Fatigue, problèmes digestifs, troubles du sommeil, faiblesse circulatoire ou états inflammatoires.</p>
+              </div>
+              </div>
+              <div class="row sub-service">
+                <div class="col-lg-offset-1 col-lg-5">
+                  <h3>Les bienfaits du drainage lymphatique</h3>
+                  <p>Technique de massage doux destiné à stimuler la circulation de la lymphe et à détoxiquer l’organisme, tout en renforçant le système immunitaire. Lorsque la circulation de la lymphe est déficiente, le corps peut s'affaiblir et s'intoxiquer, ce qui risque d’entraîner divers problèmes de santé : enflure des membres, vieillissement prématuré, cellulite, jambes lourdes, vergetures, etc.</p>
+                  <p>Jambes lourdes, cellulite, rides, obésité, couperose, cicatrisation, système digestif, œdèmes, etc.</p>
+                </div>
+                <div class="col-lg-5">
+                    <div class="package-card">
+                      <img src="images/img-product-6.jpg" alt="service-5" class="img-product">
+                      <h3>Je profite des bienfaits du drainage lymphatique</h3>
+                      <p>L'hypnose est une technique remarquablement efficace et rapide pour vous aider à arrêter de fumer. Et sans rechute. Car vous deviendrez NON FUMEUR, que vous soyez faiblement ou très fortement dépendants à la nicotine, et pas un ancien fumeur. Il n’y aura donc pas de compensations.</p>
+                      <div class="package-footer">
+                      <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                      <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row sub-service">
+                <div class="col-lg-offset-1 col-lg-5">
+                  <div class="package-card">
+                    <img src="images/img-product-7.jpg" alt="service-5" class="img-product">
+                    <h3>Je me relaxe et rééquilibre mes énergies</h3>
+                    <p>Pour ce massage, on utilise une dizaine de pierres volcaniques d’Hawaii, chauffées. Par des mouvements lents, des effleurages doux et appuyés, on masse avec les pierres lisses et une huile végétale.</p>
+                    <div class="package-footer">
+                    <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                    <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                  </div>
+                </div>
+                </div>
+                <div class="col-lg-5">
+                  <h3>Relaxation et rééquilibre des énergies</h3>
+                  <p>Pour ce massage, on utilise une dizaine de pierres volcaniques d’Hawaii, chauffées. Par des mouvements lents, des effleurages doux et appuyés, on masse avec les pierres lisses et une huile végétale. Ensuite, on pose les pierres à des endroits précis de corps, le long des méridiens, les centres énergétiques. Elles diffusent une douce chaleur et procurent une profonde sensation de bien-être et de relâchement.</p>
+                  <p>Système circulatoire et lymphatique, stress, fatigue, douleurs, spasmes, tensions musculaires, élimination des toxines, sommeil.</p>
+                </div>
+                </div>
+                <div class="row sub-service">
+                  <div class="col-lg-offset-1 col-lg-5">
+                  <h3>Un magnifique massage hawaïen</h3>
+                  <p>Magnifique massage complet du corps et du visage inspiré de la tradition chamanique hawaïenne. Il ressemble à une danse, gracieux et constamment en mouvement, et relie toutes les dimensions de l’être à la source de vie. Avant le massage, on exprime un vœu et le voyage commence…</p>
+                  <p>Travail en profondeur, dispersion de blocages et tensions, harmonisation et libération émotionnelle. Nombreux problèmes de santé.</p>
+                </div>
+                <div class="col-lg-5">
+                  <div class="package-card">
+                    <img src="images/img-product-8.jpg" alt="service-5" class="img-product">
+                    <h3>Je savoure un magnifique massage hawaïen</h3>
+                    <p>Magnifique massage complet du corps et du visage inspiré de la tradition chamanique hawaïenne. Il ressemble à une danse, gracieux et constamment en mouvement, et relie toutes les dimensions de l’être à la source de vie.</p>
+                    <div class="package-footer">
+                    <p class="package-price">1ère séance : 120 CHF<br>dès 2ème séance : 90 CHF</p>
+                    <a class="btn btn-lg hypnose-stop-tabac" href="#contact">Je prends RDV</a>
+                  </div>
+                  </div>
+                </div>
+              </div>-->
+            </div>
+
+        <!-- Section massage End-->
+
+        <!-- Section blog-->
+
+            <div id="blog" class="container-fluid section section-grey">
+            <div class="container">
+              <div class="row service">
+                <div class="col-lg-12 service-description">
+                  <h2 class="text-center">NOTRE BLOG</h2>
+                  <p class="sub-title">En savoir plus sur les techniques liées à l'hypnose</p>
+                </div>
+              </div>
+
+              <div class="row marketing">
+                <div class="col-lg-4">
+                  <div class="blog-article-preview">
+                  <img src="images/img-product-6.jpg" alt="service-5" class="img-blog">
+                  <h3>Le fonctionnement de l’hypnose</h3>
+                  <p>La pratique de l’hypnose consiste à reproduire intentionnellement cette phase de notre conscience en se focusant sur le domaine...</p>
+                  <a class="btn btn-lg btn-revert" href="/hypnomontreux/article-fonctionnement-hypnose.html">Lire la suite</a>
+                  </div>
+                </div>
+                  <div class="col-lg-4">
+                    <div class="blog-article-preview">
+                    <img src="images/img-product-2.jpg" alt="service-5" class="img-blog">
+                    <h3>A qui s’adresse l’hypnose ?</h3>
+                    <p>L’hypnose s’adresse ainsi à toute personne, adulte, adolescent ou enfant. Parfois, la simple prononciation du mot hypnose...</p>
+                    <a class="btn btn-lg btn-revert" href="/hypnomontreux/article-adresse-hypnose.html">Lire la suite</a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div class="blog-article-preview">
+                    <img src="images/img-product-5.jpg" alt="service-5" class="img-blog">
+                    <h3>Le drainage lymphatique thérapeutique ou esthétique</h3>
+                    <p>Technique de massage doux destinée à stimuler la circulation de la lymphe et à détoxiquer l'organisme, tout en renforçant...</p>
+                    <a class="btn btn-lg btn-revert" href="/hypnomontreux/article-drainage-lymphatique.html">Lire la suite</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 text-center blog-cta">
+                  <a class="btn btn-lg btn-revert" href="/hypnomontreux/blog.html">Tous nos articles</a>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- Section blog-->
+
+
+        <!-- Section Contact-->
+
+            <div id="contact" class="container section">
+
+              <div class="row service">
+                <div class="col-lg-12 service-description">
+                  <h2 class="text-center">NOUS CONTACTER</h2>
+                </div>
+              </div>
+
+              <div class="row marketing">
+                <div class="col-lg-6">
+                  <form class="tcf-form-panel">
+                    <div class="form-group">
+                      <label for="exampleInputName1">Votre Nom</label>
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Votre Adresse e-mail</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Votre email"
+                       data-error="Veuillez préciser votre adresse e-mail" required>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input class="hypnose-checkbox" type="checkbox"> Hypnose
+                      </label>
+                      <label>
+                        <input class="eft-checkbox" type="checkbox"> EFT
+                      </label>
+                      <label>
+                        <input class="massage-checkbox" type="checkbox"> Massages
+                      </label>
+                      <label>
+                        <input class="divers-checkbox" type="checkbox"> Divers
+                      </label>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Votre demande</label>
+                      <textarea class="form-control demande" rows="5" placeholder="Votre demande"></textarea>
+                    </div>
+
+                    <button id="contact-us-btn" type="submit" class="btn btn-default">Contacter</button>
+                    <div class="alert alert-success" role="alert">Votre message a été envoyé, merci de nous avoir contacté.</div>
+                    <div class="alert alert-danger" role="alert">Oops! un problème est survenu.</div>
+                  </form>
+                </div>
+                  <div class="col-lg-6">
+                    <div class="info-contact-panel">
+                      <div class="info-contact-title">
+                        <h4>Accès et contact</h4>
+                      </div>
+                      <div id="map2" class="map"></div>
+
+                    <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFJabmmSHj3XBsuv4eC5IITTfot6tnRHk&callback=initMap"
+                    async defer></script>-->
+                    <div class="info-contact-article">
+                      <p class="adresse">
+                        <i class="fa fa-map-marker"></i>
+                        Centre d'hypnothérapie et de soins naturels</br>
+                        Av. Alexandre Vinet 17</br>
+                        1815 Clarens</br>
+                        Esplanade centre commercial Migros (parking)</p>
+                      <p class="phone-number"><i class="fa fa-phone" aria-hidden="true"></i> 079 575 57 88</p>
+                      <p class="email"><i class="fa fa-envelope" aria-hidden="true"></i> contact@hypnomontreux.ch</p>
+                      <div class="info-contact-cta-ctn">
+                        <a class="btn btn-lg btn-revert" href="https://www.google.ca/maps/place/Hypnomontreux/@46.4413826,6.8908696,17z/data=!3m1!4b1!4m5!3m4!1s0x478e9b6a4c94f7c9:0x1651c134e1d546c9!8m2!3d46.4413789!4d6.8930583?hl=en" target="_blank">Accès</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Section contact-->
+    <div class="container section">
+      <div class="footer">
+        <p><a href="http://thecomputerfirm.com"> © The Computer Firm 2016</a></p>
+      </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

@@ -1,0 +1,594 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "variables";
+
+h1,h2,h3,h4,h5{
+  font-family: $title-font;
+}
+blockquote,
+body,
+h1 {
+    line-height: 1.25em;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.625em;
+    line-height: 1.1538em;
+}
+h3 {
+    font-size: 1.375em;
+    line-height: 1.1363em;
+}
+h4 {
+    line-height: 1.222222em;
+}
+blockquote {
+    font-size: 1.25em;
+}
+
+@media (min-width:991px) {
+
+  h2,
+  h3 {
+      line-height: 1.25em;
+  }
+  body {
+      font-size: 16px;
+      line-height: 1.375em;
+  }
+  h1 {
+      font-size: 3em;
+      line-height: 1.05em;
+  }
+  h2 {
+      font-size: 2.25em;
+  }
+  h3 {
+      font-size: 1.75em;
+  }
+  h4 {
+      font-size: 1.125em;
+      line-height: 1.222222em;
+  }
+  blockquote {
+      font-size: 1.5em;
+      line-height: 1.4583333em;
+  }
+
+
+
+}
+@media (min-width:767px) {
+
+  h1 {
+      font-size: 2.5em;
+      line-height: 1.125em;
+  }
+  h2 {
+      font-size: 2em;
+      line-height: 1.25em;
+  }
+  h3 {
+      font-size: 1.5em;
+  }
+  h4 {
+      line-height: 1.11111em;
+  }
+
+}
+
+/* Space out container-narrowt a bit */
+html, body {
+  overflow-x:hidden
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: $text-font;
+}
+
+blockquote {
+  float:left;
+  text-align: left;
+  width:100%;
+  background:$light-color;
+  /*border-left: 10px solid #ccc;*/
+  border-left:none;
+  margin: 3em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+
+  small{
+    margin:1.25em 0;
+  }
+  &:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+}
+
+#accueil, #cta-menu{
+  @include section-color($brand-color-1);
+}
+
+#hypnose, #blog, #cta-menu-article, #intro-company{
+  @include section-color($brand-color-2);
+}
+
+#eft, #contact {
+  @include section-color($brand-color-3);
+}
+
+#massages{
+  @include section-color($brand-color-4);
+}
+
+#cta-menu{
+  margin-top:14px;
+  .btn{
+    height:20px;
+    line-height: 20px;
+    padding:0 10px;
+  }
+}
+#cta-menu-article{
+  margin-top:14px;
+  .btn{
+    height:20px;
+    line-height: 20px;
+    padding:0 10px;
+  }
+}
+
+.cta-blog-section{
+  margin-top:-30px;
+  padding-bottom: 70px;
+  h3,p{
+    margin-bottom: 20px;
+  }
+}
+
+.section{
+  padding-top:30px;
+  @media (min-width:991px) {
+  padding-top:100px;
+  }
+  p{
+    text-align: justify;
+  }
+}
+
+.blog-article{
+  margin-bottom:100px;
+}
+
+.section-grey{
+  background-color: darken($light-color,3%);
+}
+
+.sub-service{
+  margin-top:20px;
+  margin-bottom:20px;
+  .sub-service-desc{
+    padding:20px;
+  }
+}
+
+.hideme
+{
+    opacity:0;
+    @media only screen and (max-device-width: 991px) {
+    opacity:1;
+    }
+}
+
+.btn{
+  height:36px;
+  line-height: 36px;
+  padding: 0 16px;
+  font-size: 16px;
+  border-radius: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+//Tesitmonial
+.testimonial-panel{
+  margin-top:30px;
+  position:relative;
+  width:100%;
+  .testimonial-author-subpanel{
+    width:100%;
+    margin:0 auto;
+    float:left;
+    position:relative;
+    .portrait{
+      width:60%;
+      margin:0 20%;
+      @media (min-width:991px) {
+        width:80%;
+        margin:0 10%;
+      }
+    }
+    p{
+      font-style: italic;
+      text-align: left;
+    }
+    @media (min-width:991px) {
+    width:40%;
+    margin:0 5%;
+    margin-top:60px;
+    }
+  }
+    p {
+      display: inline;
+    }
+    @media (min-width:991px) {
+    width:100%;
+    }
+  }
+
+
+// testimonial END
+
+// info & contact
+
+.side-panel{
+  margin-top:40px;
+}
+
+.info-contact-panel{
+  display:inline-block;
+  width:100%;
+  border:1px $light-color-darken solid;
+  border-radius: 2px;
+
+  padding-bottom: 10px;
+
+  .info-contact-title{
+    width:100%;
+    text-align: center;
+  }
+  .map{
+    width:100%;
+    height:200px;
+    overflow-x:hidden;
+  }
+  .info-contact-article{
+    width:100%;
+    margin:20px;
+    display:inline-block;
+    p{
+      text-align: left;
+      i{
+        margin-right:5px;
+      }
+    }
+    .info-contact-cta-ctn{
+      margin-right:30px;
+      margin-top:20px;
+      float:right;
+    }
+  }
+
+}
+// info & contact END
+
+// Service Description Panel
+.service{
+  .service-description{
+    margin-top:20px;
+    margin-bottom:50px;
+    h2{
+      text-align: center;
+      margin-bottom:10px;
+      font-weight: 600;
+      font-size: 2em;
+    }
+    p{
+      text-align: justify;
+      line-height:1.5em;
+    }
+    .sub-title{
+      font-style: italic;
+      text-align: center;
+      margin-bottom:40px;
+      font-weight:300;
+    }
+  }
+  .massage-desc{
+    margin-bottom:0px;
+  }
+}
+// Service end
+
+// Product / Service card
+.package-card{
+  width:100%;
+  background-color:$light-color;
+  display: inline-block;
+  margin:40px auto;
+  //padding:30px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  /*transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  &:hover{
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }*/
+
+  .img-product{
+    //margin:-30px;
+    padding:0;
+    width:100%;
+    margin-bottom:10px;
+  }
+  h3{
+    width:85%;
+    margin:0 auto;
+    color:$brand-color-2-light;
+    text-align:left;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top:10px;
+    margin-bottom: 30px;
+  }
+  p{
+    width:85%;
+    margin:0 auto;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  .package-footer{
+    height:30px;
+    width:85%;
+    margin:0 auto;
+    .package-price{
+      width:200px;
+      font-size:0.8em;
+      float:left;
+      font-style: italic;
+      color:grey;
+      text-align: right;
+    }
+    a{
+      position:relative;
+      float:right;
+      margin-left:10px;
+      margin-bottom:10px;
+    }
+  }
+}
+// Product / Service END
+
+//Contact-form panel
+.tcf-form-panel{
+  margin-bottom:40px;
+  input:focus,
+  textarea:focus{
+    outline: none !important;
+    border-color: $brand-color-3;
+    box-shadow: 0 0 10px $brand-color-3;
+  }
+  .form-group{
+    margin-bottom: 20px;
+  }
+  .alert{
+    margin-top:20px;
+  }
+  .checkbox{
+    label{
+      margin-right: 10px;
+    }
+  }
+}
+//Contact-form panel END
+
+/* Custom page header */
+.header {
+  /*border-bottom: 1px solid #e5e5e5;*/
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1;
+  position:fixed;
+  background:$light-color;
+  border:none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  .header-content{
+    padding-top:20px;
+    margin:0 auto;
+  }
+  .active{
+    background-color:$light-color;
+    border-color:$light-color;
+    color:$brand-color-1-light;
+    &:hover{
+      background-color:$brand-color-1-light;
+      border-color:$brand-color-1-light;
+      color:$light-color;
+    }
+  }
+  .nav li a{
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size:0.7em;
+  }
+  /*.focus{
+    color:$brand-color-1;
+  }*/
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+  .navbar-brand img{
+    margin-right:10px;
+    float:left;
+    height:50px;
+    margin-top:-15px;
+  }
+  .navbar-header button{
+    border:none;
+  }
+}
+/* Custom page header END */
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+/* Custom page footer END */
+
+.blog-article-preview{
+  margin:0 auto;
+  width:90%;
+  margin-top:30px;
+  margin-bottom:40px;
+  text-align: center;
+  background: $light-color;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  img{
+    margin:0 auto;
+    width:100%;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-size:1.1em;
+    text-align: middle;
+    margin:5px 15px;
+    margin-bottom:20px;
+  }
+  p{
+    margin:5px 15px;
+    margin-bottom:30px;
+    font-size: 0.9em;
+  }
+  .btn{
+    margin-bottom:30px;
+  }
+}
+
+.blog-cta{
+  margin-top:40px;
+  margin-bottom:30px;
+  @media (min-width:991px) {
+    margin-top:30px;
+    margin-bottom:60px;
+
+  }
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.full-screen-landing{
+  background-image: url('../images/hypnomontreux-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%;
+
+  .full-screen-landing-cover{
+    background-color: rgba($light-color, .7);
+    height:100vh;
+
+    .jumbotron {
+      background: none;
+      margin-top:0;
+      text-align: center;
+      h1{
+        color:$brand-color-1;
+        font-family: $title-font;
+        font-weight: bold;
+        margin:40px 0;
+
+        @media (min-width:991px) {
+          margin-top:250px;
+        }
+      }
+      .lead{
+        font-weight: bold;
+      }
+
+      .btn {
+        margin-top: 40px;
+        @include btn-color-guide($brand-color-1-dark, $light-color);
+      }
+    }
+  }
+  .full-screen-article-cover{
+    background-color: rgba($dark-color, .6);
+    height:50vh;
+    @media (min-width:991px){
+      height:50vh;
+    }
+
+    .jumbotron {
+      background: none;
+      margin-top:0;
+      text-align: center;
+      h1{
+        color:$brand-color-2-light;
+        font-family: $title-font;
+        font-weight: bold;
+        margin:40px 0;
+
+        @media (min-width:991px) {
+          margin-top:80px;
+        }
+      }
+      .blog-article-info{
+        font-style: italic;
+        text-align: center;
+        width: 100%;
+        color:$light-color;
+        font-size: 0.9em;
+      }
+      .btn {
+        margin-top: 20px;
+        @include btn-color-guide($brand-color-1-dark, $light-color);
+      }
+    }
+  }
+}
+/* Main marketing message and sign up button */
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .portrait{
+    /*margin-top:-200px;*/
+  }
+  /* Remove the padding we set earlier */
+  /*.header,*/
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead
+  .header {
+    margin-bottom: 30px;
+  }*/
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
