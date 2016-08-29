@@ -210,9 +210,10 @@ blockquote {
   width:100%;
   .testimonial-author-subpanel{
     width:100%;
-    margin:0 auto;
+    margin:10px auto;
     float:left;
     position:relative;
+    text-align: center;
     .portrait{
       width:60%;
       margin:0 20%;
@@ -223,7 +224,7 @@ blockquote {
     }
     p{
       font-style: italic;
-      text-align: left;
+
     }
     @media (min-width:991px) {
     width:40%;
@@ -591,4 +592,9 @@ blockquote {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+.disclaimer{
+  font-size:0.9em;
+  margin-top: 50px;
 }

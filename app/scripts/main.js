@@ -34,7 +34,7 @@ $('a[href=\'#contact\']').click(function() {
     messageCore = 'de magnifique massages Hawaïen';
     $('.massage-checkbox').prop('checked', true);
   }
-  var message ='J\'aimerais prendre rendez-vous pour une séance '+messageCore+', de préférence le 02 juillet à 16h';
+  var message ='J\'aimerais prendre rendez-vous pour une séance '+messageCore+'.';
   $('.demande').text(message);
     $('html, body').animate({
         scrollTop: $('#contact').offset().top - 75
